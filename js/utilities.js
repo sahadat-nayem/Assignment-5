@@ -11,7 +11,7 @@ function getTextFirldValueById(id){
 }
 
 function showSectionById(id){
-    document.getElementById('noakhali-form').classList.add('hisdden');
+    document.getElementById('noakhali-form').classList.add('hidden');
     document.getElementById('history-section').classList.add('hidden');
     
     // Show the section with the provide id as parameter

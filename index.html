@@ -43,7 +43,7 @@
 
        <!-- card-1 -->
 
-       <div class="card lg:card-side bg-base-100 shadow-xl lg:size-1/2 relative lg:left-72 mb-5 border-2 border-black-500 ">
+       <div class="card lg:card-side bg-base-100 shadow-xl mb-5 border-2 border-black-500 ">
         <figure>
           <img
             class=" rounded-xl"
@@ -56,17 +56,29 @@
             <h3><span id="donation-balance-noakhali">0</span> BDT</h3>
           </div>
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.</p>
+          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. <br> Your donation will help provide essential supplies and <br> to those affected by this disaster.</p>
           <input id="input-donate-noakhali" type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
-          <div class="card-actions justify-center">
-            <button id="btn-noakhali-donate-now" class="btn bg-[#B4F461] px-40">Donate Now</button>
-          </div>
+          <button id="btn-noakhali-donate-now" class="btn btn bg-[#B4F461] font-semibold text-xl" onclick="my_modal_1.showModal()">Donate Now</button>
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box text-center">
+              <h3 class="text-3xl font-bold">congrates!</h3>
+              <img src="./assets/coin.png" class=" mx-auto mt-2" alt="">
+              <p class="py-4">You Have Donated for Noa</p>
+              <h3 class="text-3xl font-bold">succesful</h3>
+          
+              <div class="modal-action">
+                <form method="dialog">
+                  
+                  <button class="btn">Close Confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
-
       <!-- card-2 -->
 
-      <div class="card lg:card-side bg-base-100 shadow-xl lg:size-1/2 relative lg:left-72 mb-5 border-2 border-black-500">
+      <div class="card lg:card-side bg-base-100 shadow-xl mb-5 border-2 border-black-500">
         <figure>
           <img
             class=" rounded-xl"
@@ -76,20 +88,33 @@
         <div class="card-body">
           <div class="flex gap-2">
             <img src="assets/coin.png" alt="">
-            <h3><span id="donation-balance-feni">600</span> BDT</h3>
+            <h3><span id="donation-balance-feni">0</span> BDT</h3>
           </div>
           <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.</p>
+          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. <br> Your donation will help provide essential supplies and <br>  to those affected by this disaster.</p>
           <input id="input-donate-feni" type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
-          <div class="card-actions justify-center">
-            <button id="btn-feni-donate-now" class="btn bg-[#B4F461] px-40">Donate Now</button>
-          </div>
+          <button id="btn-feni-donate-now" class="btn btn bg-[#B4F461] font-semibold text-xl" onclick="my_modal_4.showModal()">Donate Now</button>
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box text-center ">
+              
+              <h3 class="text-3xl font-bold">congrates!</h3>
+              <img src="./assets/coin.png" class=" mx-auto mt-2" alt="">
+              <p class="py-4">You Have Donated for Feni</p>
+              <h3 class="text-3xl font-bold">succesful</h3>
+              <div class="modal-action">
+                <form method="dialog">
+                
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
 
       <!-- card-3 -->
 
-      <div class="card sm:mb-56 lg:card-side bg-base-100 shadow-xl lg:size-1/2 relative lg:left-72 border-2 border-black-500">
+      <div class="card sm:mb-56 lg:card-side bg-base-100 shadow-xl border-2 border-black-500">
         <figure>
           <img
             class=" rounded-xl"
@@ -99,14 +124,26 @@
         <div class="card-body">
           <div class="flex gap-2">
             <img src="assets/coin.png" alt="">
-            <h3><span id="donation-balance-quota">2400</span> BDT</h3>
+            <h3><span id="donation-balance-quota">0</span> BDT</h3>
           </div>
           <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
-          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.</p>
+          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. <br> Your donation will help provide essential supplies and <br> to those affected by this disaster.</p>
           <input id="input-donate-quota" type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
-          <div class="card-actions justify-center">
-            <button id="btn-quota-donate-now" class="btn bg-[#B4F461] px-40">Donate Now</button>
-          </div>
+          <button id="btn-quota-donate-now" class="btn btn bg-[#B4F461] font-semibold text-xl" onclick="my_modal_5.showModal()">Donate Now</button>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box text-center">
+              <h3 class="text-3xl font-bold">congrates!</h3>
+              <img src="./assets/coin.png" class=" mx-auto mt-2" alt="">
+              <p class="py-4">You Have Donated for Qoakhali Movement</p>
+              <h3 class="text-3xl font-bold">succesful</h3>
+              <div class="modal-action">
+                <form method="dialog">
+                
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
     </div>
@@ -114,7 +151,7 @@
      <!-- History Start -->
      <div id="history-section" class="hidden">
        <div id="history-container" class="space-y-3">
-         ghgjfjcj
+         
        </div>
      </div>
      <!-- History End -->
