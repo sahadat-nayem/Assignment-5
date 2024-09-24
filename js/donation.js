@@ -43,7 +43,16 @@ document.getElementById('btn-feni-donate-now').addEventListener('click',function
     document.getElementById('donation-balance-feni').innerText = totalAmount;
     document.getElementById('total-balance').innerText = totalBalance;
     
-    
+    const div = document.createElement('div');
+    div.classList.add('bg-slate-50','border-2', 'p-4');
+    div.innerHTML= `
+    <p class="text-xl font-bold ">${noakhaliAmount} Taka is Donate for Flood at Noakhali, Bangladesh</p>
+    <p>Date :  ${new Date().toLocaleDateString()}  GMT +0600 (Bangladesh Standard Time)</p>
+    `
+ 
+
+  
+   document.getElementById('history-section').appendChild(div);
       
   });
 
@@ -63,7 +72,16 @@ document.getElementById('btn-quota-donate-now').addEventListener('click',functio
     document.getElementById('donation-balance-quota').innerText = totalAmount;
     document.getElementById('total-balance').innerText = totalBalance;
     
-    
+    const div = document.createElement('div');
+    div.classList.add('bg-slate-50','border-2', 'p-4');
+    div.innerHTML= `
+    <p class="text-xl font-bold ">${noakhaliAmount} Taka is Donate for Flood at Noakhali, Bangladesh</p>
+    <p>Date :  ${new Date().toLocaleDateString()}  GMT +0600 (Bangladesh Standard Time)</p>
+    `
+ 
+
+  
+   document.getElementById('history-section').appendChild(div);
       
   });
 
